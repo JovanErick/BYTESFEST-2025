@@ -1,0 +1,82 @@
+/* ============== MAIN ============== */
+main {
+  padding-top: 40px;
+}
+
+/* ============== BACKGROUND GRID ============== */
+.background {
+  background-color: var(--tertiary-color);
+  position: fixed;
+  inset: 0;
+  z-index: -10;
+  pointer-events: none;
+  min-height: 100%;
+}
+
+.background svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* ============== FORM TANYA PERTANYAAN ============== */
+.forum-title {
+  padding-top: 5vh;
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+  color: var(--primary-color);
+  margin: 40px;
+}
+
+.ask-question {
+  padding: 2rem;
+  background-color: white;
+  margin: 1rem auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Textarea untuk input pertanyaan */
+.ask-question textarea {
+  height: 100px;
+  margin: 10px 0;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-family: "Poppins", sans-serif;
+  padding: 20px;
+  resize: none;
+}
+
+/* Tombol untuk mengirim pertanyaan */
+.ask-question button {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 0.7rem 1.2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+/* Efek hover tombol */
+.ask-question button:hover {
+  background-color: var(--secondary-color);
+}
+/* ============== DAFTAR PERTANYAAN ============== */
+.question-list {
+  max-width: 860px;
+  margin: 1rem auto;
+  padding: 0 2rem;
+}
+/* Kartu pertanyaan individual */
+.question-card {
+  background-color: white;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}

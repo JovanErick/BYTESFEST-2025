@@ -1,0 +1,433 @@
+#home {
+  position: relative;
+  display: flex;
+  min-height: calc(100vh - 30px);
+  flex-wrap: wrap;
+  padding: var(--padding-section);
+}
+
+/* Background */
+.background {
+  background-color: var(--tertiary-color);
+  position: absolute;
+  inset: 0;
+  z-index: -10;
+  pointer-events: none;
+  min-height: 100%;
+  min-width: 100vw;
+}
+
+.background svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* Hero Content */
+.hero-content {
+  display: flex;
+  position: relative;
+  min-height: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.hero-content .content-left {
+  padding-top: 10vh;
+  margin: auto 0;
+  font-size: clamp(28px, 2.75vw, 45px);
+  width: 55%;
+}
+
+.hero-content .content-left h1 {
+  line-height: 1;
+}
+
+.hero-content .content-left p {
+  width: 100%;
+  max-width: 75%;
+  margin-top: 25px;
+  font-size: clamp(16px, 1.1vw, 20px);
+  color: #4b5563;
+}
+
+.hero-content .content-left .btn-container {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.hero-content .content-left .btn {
+  font-size: clamp(16px, 1.1vw, 20px);
+  padding: 15px clamp(8px, 1vw, 12px);
+  border-radius: 5px;
+  transition: all 0.5s;
+}
+
+.btn.learn-hub {
+  background-color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+  color: var(--tertiary-color);
+}
+
+.btn.gallery {
+  background: transparent;
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+}
+
+.btn.forum {
+  background-color: var(--secondary-color);
+  border: 2px solid var(--secondary-color);
+  color: var(--tertiary-color);
+}
+
+/* Hover states */
+.btn.learn-hub:hover {
+  background-color: color-mix(in srgb, var(--primary-color), black 20%);
+  border: 2px solid color-mix(in srgb, var(--primary-color), black 20%);
+  color: var(--tertiary-color);
+}
+
+.btn.gallery:hover {
+  background: transparent;
+  border: 2px solid color-mix(in srgb, var(--primary-color), black 40%);
+  color: var(--primary-color);
+}
+
+.btn.forum:hover {
+  background-color: color-mix(in srgb, var(--secondary-color), black 20%);
+  border: 2px solid color-mix(in srgb, var(--secondary-color), black 20%);
+  color: var(--tertiary-color);
+}
+
+.hero-content .content-right {
+  padding-top: 10vh;
+  margin: auto 0;
+  width: 45%;
+  display: grid;
+  justify-items: center;
+}
+
+.grid-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
+  justify-items: center;
+}
+
+.content-right img {
+  background-color: #f3f4f6;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  border-radius: 15px;
+  width: 100%;
+  max-width: clamp(180px, 20vw, 250px);
+  aspect-ratio: 4/3;
+  object-fit: cover;
+}
+
+/* Image tilt variations */
+.tilt1 {
+  transform: rotate(3deg);
+}
+.tilt2 {
+  transform: rotate(-2deg);
+}
+.tilt3 {
+  transform: rotate(-1deg);
+}
+.tilt4 {
+  transform: rotate(3deg);
+}
+
+/* Section: Top Features & Learning Hub */
+#top-features,
+#learning-hub,
+#gallery {
+  display: flex;
+  flex-direction: column;
+  padding: var(--padding-section);
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+}
+
+#top-features,
+#gallery {
+  background-color: #fff;
+}
+
+#top-features .header-container,
+#learning-hub .title,
+#gallery .title {
+  display: flex;
+  flex-direction: column;
+}
+
+#top-features .header-container h2,
+#learning-hub .title h2,
+#gallery .title h2 {
+  color: var(--primary-color);
+  margin: 0 auto;
+  font-size: var(--font-heading);
+  text-align: center;
+}
+
+#top-features .header-container p,
+#learning-hub .title p,
+#gallery .title p {
+  margin: 10px auto;
+  width: 50%;
+  text-align: center;
+  font-size: clamp(16px, 1.1vw, 20px);
+}
+
+#top-features .card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+#top-features .card {
+  width: 19%;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 25px;
+  min-width: 250px;
+}
+
+#top-features .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+#top-features .card .icon-container {
+  display: flex;
+  width: 55px;
+  aspect-ratio: 1;
+  background-color: var(--secondary-color);
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+#top-features .card .fa-solid {
+  font-size: 25px;
+  margin: auto;
+  color: var(--tertiary-color);
+}
+
+#top-features .card h4,
+#learning-hub .course-card .card-content h4,
+#gallery .gallery-card .gallery-info h3 {
+  font-size: clamp(20px, 1.1vw, 24px);
+  color: var(--primary-color);
+}
+
+#top-features .card p,
+#learning-hub .course-card .card-content p,
+#gallery .gallery-card .gallery-info p {
+  text-align: left;
+  font-size: clamp(16px, 1.1vw, 20px);
+  color: #000;
+  margin-bottom: 10px;
+}
+
+#top-features .card a {
+  font-weight: 500;
+}
+
+/* Learning Hub */
+#learning-hub {
+  background-color: var(--tertiary-color);
+}
+
+#learning-hub .container,
+#gallery .container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+#learning-hub h5,
+#gallery h5 {
+  margin: 0 auto;
+  color: #000;
+  font-weight: 500;
+  font-size: var(--font-base);
+}
+
+/* Course Card */
+.course-card,
+#gallery .gallery-card {
+  width: 30%;
+  min-width: 250px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.course-card:hover,
+#gallery .gallery-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.course-card .img-holder,
+#gallery .gallery-card .img-holder {
+  overflow: hidden;
+  width: 100%;
+  border-radius: 15px 15px 0 0;
+}
+
+.course-card img,
+#gallery .gallery-card img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.course-card:hover img,
+#gallery .gallery-card:hover img {
+  transform: scale(1.05);
+}
+
+.card-content,
+#gallery .gallery-info {
+  padding: 20px;
+}
+
+.card-content .badge {
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+.card-content p {
+  color: #000;
+}
+
+.card-meta-list {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  font-size: 14px;
+  color: #555;
+}
+
+#learning-hub .course-card:nth-child(3),
+#gallery .gallery-card:nth-child(3) {
+  position: relative;
+  overflow: hidden;
+}
+
+#learning-hub .course-card:nth-child(3) .overlay-glassy,
+#gallery .gallery-card:nth-child(3) .overlay-glassy {
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  z-index: 10;
+  transition: background 0.3s ease;
+}
+
+/* Tulisan */
+#learning-hub .course-card:nth-child(3) .overlay-glassy span,
+#gallery .gallery-card:nth-child(3) .overlay-glassy span {
+  color: white;
+  font-weight: 600;
+  font-size: 1.1rem;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.gallery-info .likes {
+  color: var(--secondary-color);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.like-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--secondary-color); /* warna merah */
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: clamp(16px, 1.1vw, 20px);
+}
+
+/* Responsive: Mobile */
+@media (max-width: 768px) {
+  .hero-content {
+    max-width: 100%;
+    flex-direction: column;
+    padding: 6vh 0;
+  }
+
+  .hero-content .content-left,
+  .hero-content .content-left {
+    width: 1;
+  }
+  .hero-content .content-left,
+  .hero-content .content-right {
+    text-align: center;
+    margin: auto;
+  }
+
+  .hero-content .content-left p {
+    max-width: 100%;
+  }
+
+  .hero-content .content-left .btn {
+    display: block;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .hero-content .content-right {
+    width: 100%;
+  }
+
+  .hero-content .content-left {
+    margin-top: 20px;
+    width: 100%;}
+ .hero-content .content-left .btn-container {
+  justify-content: center;
+  margin-top: 50px;
+ }
+
+  #top-features .header-container p,
+#learning-hub .title p,
+#gallery .title p {
+width: 100%;
+}
+
+}
+
+@media screen and (max-width: 1024px) {
+  #home {
+    padding: 15px 30px; /* Or lower like 20px if needed */
+  }
+}

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="template.css" />
+    <link rel="stylesheet" href="gallery.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>SkenarioKita</title>
+  </head>
+  <body>
+    <!-- ======================
+         HEADER DAN NAVBAR
+         ====================== -->
+    <header>
+      <nav>
+        <div class="logo-container">
+          <img src="/Image/SkenarioKita.png" alt="Skenario Kita" />
+          <a href="index.html"
+            ><h1>
+              <span style="color: var(--primary-color)">Skenario</span
+              ><span style="color: var(--secondary-color)">Kita</span>
+            </h1></a
+          >
+        </div>
+
+        <div class="menu" id="menu">
+          <a href="index.html"><p>Home</p></a>
+          <a href="learning.html"><p>Learning Hub</p></a>
+          <a href="gallery.html"
+            ><p style="color: var(--secondary-color)">Gallery</p></a
+          >
+          <a href="forum.html"><p>Forum</p></a>
+          <a href="aboutus.html"><p>About Us</p></a>
+        </div>
+
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <div class="menu2" id="menu2">
+          <a href="signup.html" class="btn-signup">Sign Up</a>
+          <a href="login.html" class="btn-login">Login</a>
+        </div>
+      </nav>
+    </header>
+    <!-- ======================
+         MAIN CONTENT
+         ====================== -->
+    <main>
+      <div class="background">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 90 90"
+          preserveAspectRatio="none"
+        >
+          <path d="M0,0 L100,0 L100,100 L0,100 Z" fill="url(#grid)" />
+          <defs>
+            <pattern
+              id="grid"
+              width="8.5"
+              height="8.5"
+              patternUnits="userSpaceOnUse"
+            >
+              <path
+                d="M 10 0 L 0 0 0 10"
+                fill="none"
+                stroke="rgba(0, 0, 0, 0.05)"
+                stroke-width="0.3"
+              />
+            </pattern>
+          </defs>
+        </svg>
+      </div>
+      <!-- ===== GALERI FOTO ===== -->
+      <section class="gallery" id="gallery">
+        <h2 class="gallery-title">Karya Fotografi Kami</h2>
+        <div class="image-gallery" id="image-gallery"></div>
+      </section>
+
+      <!-- ===== GALERI VIDEO ===== -->
+      <section class="video" id="video">
+        <h2 class="gallery-title">Karya Videografi Kami</h2>
+
+        <div class="video-gallery">
+          <div class="gallery-card">
+            <iframe
+              width="100%"
+              src="https://www.youtube.com/embed/C6uitDYevo0  "
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            >
+            </iframe>
+            <div class="gallery-info">
+              <p class="author">Author: Senyawa Studios</p>
+              <p class="likes"><i class="fas fa-heart"></i> 58 Likes</p>
+            </div>
+          </div>
+
+          <div class="gallery-card">
+            <iframe
+              width="100%"
+              height="600"
+              src="https://www.youtube.com/embed/ir_5fkXBrFY"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            >
+            </iframe>
+            <div class="gallery-info">
+              <p class="author">Author: Senyawa Studios</p>
+              <p class="likes"><i class="fas fa-heart"></i> 44 Likes</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <br />
+      <br />
+    </main>
+    <!-- ======================
+         FOOTER
+         ====================== -->
+    <footer id="footer">
+      <div class="footer-logo">
+        <img src="Image/SkenarioKita-footer.png" alt="" />
+      </div>
+
+      <div class="right-container">
+        <div class="right-column-container">
+          <h1>SkenarioKita</h1>
+
+          <div class="information">
+            <div class="footer-item">
+              <div class="footer-col footer-company">
+                <h3>Informasi</h3>
+                <hr class="line" />
+                <ul>
+                  <li><a href="aboutus.html">Tentang Kami</a></li>
+                </ul>
+              </div>
+
+              <div class="footer-col footer-social">
+                <h3>Kontak Kami</h3>
+                <hr class="line" />
+                <a
+                  href="https://www.instagram.com/osis_smaxto1?igsh=MXVtM2RkMjhqZjZ0bw=="
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+                <a
+                  href="https://www.tiktok.com/@osis_smaxto1?_t=8rczK0MXxHc&_r=1"
+                  ><i class="fa-brands fa-tiktok"></i
+                ></a>
+                <a
+                  href="https://www.youtube.com/@osissmast.kristoforus164/videos"
+                  ><i class="fa-brands fa-youtube"></i
+                ></a>
+                <a href="https://kristo.sch.id/v2/"
+                  ><i class="fa-solid fa-globe"></i
+                ></a>
+              </div>
+
+              <div class="footer-col footer-news">
+                <h3>Berita Terbaru</h3>
+                <hr class="line" />
+                <div class="email-input">
+                  <form action="">
+                    <input
+                      type="email"
+                      id="input"
+                      name="email"
+                      placeholder="Masukkan Email"
+                    />
+                    <button type="submit">Kirim</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- ======================
+         SCRIPT
+         ====================== -->
+    <script src="gallery.js"></script>
+    <script src="template.js"></script>
+  </body>
+</html>

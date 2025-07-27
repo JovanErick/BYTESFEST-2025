@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="learning-hub.css" />
+    <link rel="stylesheet" href="template.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>SkenarioKita</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <!-- Logo SkenarioKita -->
+        <div class="logo-container">
+          <img src="/Image/SkenarioKita.png" alt="Skenario Kita" />
+          <a href="index.html"
+            ><h1>
+              <span style="color: var(--primary-color)">Skenario</span
+              ><span style="color: var(--secondary-color)">Kita</span>
+            </h1></a
+          >
+        </div>
+
+        <!-- Menu Navigasi Utama -->
+        <div class="menu" id="menu">
+          <a href="index.html"><p>Home</p></a>
+          <a href="learning.html"><p style="color: var(--secondary-color)">Learning Hub</p></a>
+          <a href="gallery.html"><p>Gallery</p></a>
+          <a href="forum.html"><p>Forum</p></a>
+          <a href="aboutus.html"><p>About Us</p></a>
+        </div>
+
+         <!-- Hamburger Menu untuk Mobile -->
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <!-- Tombol Sign Up dan Login -->
+        <div class="menu2" id="menu2">
+          <a href="signup.html" class="btn-signup">Sign Up</a>
+          <a href="login.html" class="btn-login">Login</a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- ===================================
+           HERO SECTION
+           ===================================
+           Bagian pertama yang muncul:
+           latar grid SVG, headline utama,
+           CTA Button & gambar grid.
+      -->
+      <div class="background">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 100 100"
+          preserveAspectRatio="none"
+        >
+          <path d="M0,0 L100,0 L100,100 L0,100 Z" fill="url(#grid)" />
+          <defs>
+            <pattern
+              id="grid"
+              width="8.5"
+              height="8.5"
+              patternUnits="userSpaceOnUse"
+            >
+              <path
+                d="M 20 0 L 0 0 0 20"
+                fill="none"
+                stroke="rgba(0, 0, 0, 0.05)"
+                stroke-width="0.3"
+              />
+            </pattern>
+          </defs>
+        </svg>
+      </div>
+
+       <!-- ===== SECTION: Learning Hub Course ===== -->
+      <section class="course" id="course" aria-label="course">
+        <div class="container">
+          <!-- Subtitle dan judul utama section -->
+          <p class="course-subtitle">Fotografi & Videografi</p>
+          <h2 class="course-title">Pilih Course yang Ingin Kamu Pelajari</h2>
+          <!-- List grid untuk menampilkan daftar course -->
+          <ul class="grid-list">
+            <li>
+              <!-- Card untuk 1 course -->
+              <div class="course-card">
+                <!-- Gambar thumbnail course -->
+                <figure
+                  class="card-banner img-holder"
+                  style="--width: 370; --height: 220"
+                >
+                  <img
+                    src="https://i.ytimg.com/vi/QQhJ3vHdQ3g/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLB044ayAHXr9ICoBsZvnzO7Z4a-dA"
+                    width="370"
+                    height="220"
+                    loading="lazy"
+                    alt=""
+                    class="img-cover"
+                  />
+                </figure>
+                <!-- Badge durasi belajar -->
+                <div class="abs-badge">
+                  <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                  <span class="span">1 Weeks</span>
+                </div>
+                 <!-- Konten deskripsi course -->
+                <div class="card-content">
+                  <span class="badge">Fotografi & Videografi</span>
+
+                  <h3 class="h3">
+                    <a
+                      href="https://youtube.com/playlist?list=PLFuWn47YVfasn-IUQsEQpnct7wqq5QxEj&si=a3bBXlOqDxHpI9mx"
+                      class="card-title"
+                      >Basic Camera</a
+                    >
+                  </h3>
+
+                  <p class="description">
+                    Pelajari bagian-bagian kamera, cara kerja segitiga exposure,
+                    dan mode-mode kamera lainnya untuk membantumu memotret
+                    dengan lebih percaya diri.
+                  </p>
+                  <!-- Metadata: jumlah materi dan siswa -->
+                  <ul class="card-meta-list">
+                    <li class="card-meta-item">
+                      <ion-icon
+                        name="library-outline"
+                        aria-hidden="true"
+                      ></ion-icon>
+                      <span class="span">10 Lessons</span>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon
+                        name="people-outline"
+                        aria-hidden="true"
+                      ></ion-icon>
+                      <span class="span">27 Students</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="course-card">
+                <figure
+                  class="card-banner img-holder"
+                  style="--width: 370; --height: 220"
+                >
+                  <img
+                    src="https://i.ytimg.com/vi/iNLPyWuxDxo/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLD4tT8pqdGsToteoFWHNJ9pi-UiVA"
+                    width="370"
+                    height="220"
+                    loading="lazy"
+                    alt=""
+                    class="img-cover"
+                  />
+                </figure>
+
+                <div class="abs-badge">
+                  <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                  <span class="span">1 Weeks</span>
+                </div>
+
+                <div class="card-content">
+                  <span class="badge">Fotografi & Videografi</span>
+
+                  <h3 class="h3">
+                    <a
+                      href="https://youtube.com/playlist?list=PLFuWn47YVfavZYTfBZVb_1WJRegqiZArq&si=iErycbuCBzbW-vaW"
+                      class="card-title"
+                      >Basic Camera Gear</a
+                    >
+                  </h3>
+
+                  <p class="description">
+                    Kenali lensa, tripod, stabilizer, filter, dan aksesoris
+                    penting lain, serta tips memilih gear sesuai kebutuhanmu
+                    untuk fotografi dan videografi.
+                  </p>
+
+                  <ul class="card-meta-list">
+                    <li class="card-meta-item">
+                      <ion-icon
+                        name="library-outline"
+                        aria-hidden="true"
+                      ></ion-icon>
+                      <span class="span">8 Lessons</span>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon
+                        name="people-outline"
+                        aria-hidden="true"
+                      ></ion-icon>
+                      <span class="span">25 Students</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="course-card">
+                <figure
+                  class="card-banner img-holder"
+                  style="--width: 370; --height: 220"
+                >
+                  <img
+                    src="https://i.ytimg.com/vi/RRojQbSfw9k/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLAoGVUCGcS5aeEBYorqW1iNrstSVQ"
+                    width="370"
+                    height="220"
+                    loading="lazy"
+                    alt=""
+                    class="img-cover"
+                  />
+                </figure>
+
+                <div class="abs-badge">
+                  <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                  <span class="span">1 Weeks</span>
+                </div>
+
+                <div class="card-content">
+                  <span class="badge">Fotografi & Videografi</span>
+
+                  <h3 class="h3">
+                    <a
+                      href="https://youtube.com/playlist?list=PLFuWn47YVfau0HoVE7iAolQYHB9glHHwm&si=hPIKZpJmpCpNqnBg"
+                      class="card-title"
+                      >Basic Lighting</a
+                    >
+                  </h3>
+
+                  <p class="description">
+                    Pelajari dasar pencahayaan, penggunaan softbox, reflektor,
+                    dan teknik positioning lampu untuk menghasilkan foto dan
+                    video yang tajam dan artistik.
+                  </p>
+
+                  <ul class="card-meta-list">
+                    <li class="card-meta-item">
+                      <ion-icon
+                        name="library-outline"
+                        aria-hidden="true"
+                      ></ion-icon>
+                      <span class="span">12 Lessons</span>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon
+                        name="people-outline"
+                        aria-hidden="true"
+                      ></ion-icon>
+                      <span class="span">23 Students</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="course-card">
+                <figure
+                  class="card-banner img-holder"
+                  style="--width: 370; --height: 220"
+                >
+                  <img
+                    src="https://i.ytimg.com/vi/-wuGs3zqeUY/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLC5zL1VeVJJF2vau-XFNb3Cq8cBjQ"
+                    width="370"
+                    height="220"
+                    loading="lazy"
+                    alt=""
+                    class="img-cover"
+                  />
+                </figure>
+
+                <div class="abs-badge">
+                  <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                  <span class="span">2 Weeks</span>
+                </div>
+
+                <div class="card-content">
+                  <span class="badge">Videografi</span>
+
+                  <h3 class="h3">
+                    <a
+                      href="https://youtube.com/playlist?list=PLFuWn47YVfasIdAsQgWGfJuReQ-Z8veOv&si=N3RIYQS4jQgSh0wd"
+                      class="card-title"
+                      >Basic Camera Movement & Shot</a
+                    >
+                  </h3>
+
+                  <p class="description">
+                    Pelajari gerakan kamera seperti pan, tilt, dolly, dan jenis
+                    shot (wide, close up, over the shoulder) untuk membuat video
+                    yang dinamis dan bercerita.
+                  </p>
+
+                  <ul class="card-meta-list">
+                    <li class="card-meta-item">
+                      <ion-icon
+                        name="library-outline"
+                        aria-hidden="true"
+                      ></ion-icon>
+                      <span class="span">9 Lessons</span>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon
+                        name="people-outline"
+                        aria-hidden="true"
+                      ></ion-icon>
+                      <span class="span">26 Students</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="course-card">
+                <figure
+                  class="card-banner img-holder"
+                  style="--width: 370; --height: 220"
+                >
+                  <img
+                    src="https://i.ytimg.com/vi/HnkK9XuimhA/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLDEHTlsAPaII5p-clVqbDXNThIcdQ"
+                    width="370"
+                    height="220"
+                    loading="lazy"
+                    alt=""
+                    class="img-cover"
+                  />
+                </figure>
+
+                <div class="abs-badge">
+                  <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                  <span class="span">2 Weeks</span>
+                </div>
+
+                <div class="card-content">
+                  <span class="badge">Fotografi</span>
+
+                  <h3 class="h3">
+                    <a
+                      href="https://youtube.com/playlist?list=PLFuWn47YVfat2-7mimYTjBBjT6lX1bcmY&si=xCTIuXzcwSCiQQMi"
+                      class="card-title"
+                      >Basic Adobe Photoshop</a
+                    >
+                  </h3>
+
+                  <p class="description">
+                    Belajar editing foto dari dasar, mulai dari cropping, color
+                    correction, retouching, hingga penggunaan layer dan masking
+                    untuk mempercantik hasil fotomu.
+                  </p>
+
+                  <ul class="card-meta-list">
+                    <li class="card-meta-item">
+                      <ion-icon
+                        name="library-outline"
+                        aria-hidden="true"
+                      ></ion-icon>
+                      <span class="span">14 Lessons</span>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon
+                        name="people-outline"
+                        aria-hidden="true"
+                      ></ion-icon>
+                      <span class="span">28 Students</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="course-card">
+                <figure
+                  class="card-banner img-holder"
+                  style="--width: 370; --height: 220"
+                >
+                  <img
+                    src="https://i.ytimg.com/vi/CnapX0rdu7I/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLBnHWmYWgHX4SQWrRFgs5HW0-48Vg"
+                    width="370"
+                    height="220"
+                    loading="lazy"
+                    alt=""
+                    class="img-cover"
+                  />
+                </figure>
+
+                <div class="abs-badge">
+                  <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                  <span class="span">2 Weeks</span>
+                </div>
+
+                <div class="card-content">
+                  <span class="badge">Fotografi</span>
+
+                  <h3 class="h3">
+                    <a
+                      href="https://youtube.com/playlist?list=PLFuWn47YVfata9MrwvxpCElPcBXyPTfkT&si=JIJNITKMwz8ejSER"
+                      class="card-title"
+                      >Basic Adobe Ilustrator</a
+                    >
+                  </h3>
+
+                  <p class="description">
+                    Pelajari cara membuat logo, grafik sederhana, dan ilustrasi
+                    pendukung konten visual dengan alat-alat dasar Adobe
+                    Illustrator secara efisien dan menarik.
+                  </p>
+
+                  <ul class="card-meta-list">
+                    <li class="card-meta-item">
+                      <ion-icon
+                        name="library-outline"
+                        aria-hidden="true"
+                      ></ion-icon>
+                      <span class="span">18 Lessons</span>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon
+                        name="people-outline"
+                        aria-hidden="true"
+                      ></ion-icon>
+                      <span class="span">19 Students</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="course-card">
+                <figure
+                  class="card-banner img-holder"
+                  style="--width: 370; --height: 220"
+                >
+                  <img
+                    src="https://i.ytimg.com/vi/hrYKIs_RgkE/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLB-oIbUGnL1u-ZwwNmAhIwwbVONvA"
+                    width="370"
+                    height="220"
+                    loading="lazy"
+                    alt=""
+                    class="img-cover"
+                  />
+                </figure>
+
+                <div class="abs-badge">
+                  <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                  <span class="span">2 Weeks</span>
+                </div>
+
+                <div class="card-content">
+                  <span class="badge">Fotografi</span>
+
+                  <h3 class="h3">
+                    <a
+                      href="https://youtube.com/playlist?list=PLFuWn47YVfatg39d9rCwJcbYJiw-y5c4x&si=-o2STXtK9w1DrhFw"
+                      class="card-title"
+                      >Basic Adobe Lightroom</a
+                    >
+                  </h3>
+
+                  <p class="description">
+                    Pelajari cara editing foto secara cepat untuk kebutuhan feed
+                    atau portfolio, termasuk color grading, exposure adjustment,
+                    dan penggunaan preset.
+                  </p>
+
+                  <ul class="card-meta-list">
+                    <li class="card-meta-item">
+                      <ion-icon
+                        name="library-outline"
+                        aria-hidden="true"
+                      ></ion-icon>
+                      <span class="span">14 Lessons</span>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon
+                        name="people-outline"
+                        aria-hidden="true"
+                      ></ion-icon>
+                      <span class="span">22 Students</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="course-card">
+                <figure
+                  class="card-banner img-holder"
+                  style="--width: 370; --height: 220"
+                >
+                  <img
+                    src="https://i.ytimg.com/vi/Bb-UDXYhrK0/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLBw4xo_4qaTU2r9ED_uW50aY6fV2g"
+                    width="370"
+                    height="220"
+                    loading="lazy"
+                    alt=""
+                    class="img-cover"
+                  />
+                </figure>
+
+                <div class="abs-badge">
+                  <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                  <span class="span">2 Weeks</span>
+                </div>
+
+                <div class="card-content">
+                  <span class="badge">Videografi</span>
+
+                  <h3 class="h3">
+                    <a
+                      href="https://youtube.com/playlist?list=PLFuWn47YVfav2BJxaaM0MApVaDL-DwWZj&si=qj-RbXk296OAp6Y-"
+                      class="card-title"
+                      >Basic Adobe Premier Pro</a
+                    >
+                  </h3>
+
+                  <p class="description">
+                    Pelajari editing video dasar: memotong klip, menyusun
+                    timeline, menambahkan transisi, teks, dan basic color
+                    grading menggunakan Premiere Pro.
+                  </p>
+
+                  <ul class="card-meta-list">
+                    <li class="card-meta-item">
+                      <ion-icon
+                        name="library-outline"
+                        aria-hidden="true"
+                      ></ion-icon>
+                      <span class="span">21 Lessons</span>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon
+                        name="people-outline"
+                        aria-hidden="true"
+                      ></ion-icon>
+                      <span class="span">27 Students</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="course-card">
+                <figure
+                  class="card-banner img-holder"
+                  style="--width: 370; --height: 220"
+                >
+                  <img
+                    src="https://i.ytimg.com/vi/yBCyjHg9rdc/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLCa0xn6qabV1NZx2dZ81DkVJ7m_9Q"
+                    width="370"
+                    height="220"
+                    loading="lazy"
+                    alt=""
+                    class="img-cover"
+                  />
+                </figure>
+
+                <div class="abs-badge">
+                  <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                  <span class="span">3 Weeks</span>
+                </div>
+
+                <div class="card-content">
+                  <span class="badge">Videografi</span>
+
+                  <h3 class="h3">
+                    <a
+                      href="https://youtube.com/playlist?list=PLFuWn47YVfau3-tuV8_iyv03lwRJbsN5z&si=uJ_rbRpxjAa06_7x"
+                      class="card-title"
+                      >Basic Adobe After Effect</a
+                    >
+                  </h3>
+
+                  <p class="description">
+                    Pelajari animasi dasar dan motion graphics untuk
+                    mempercantik video kamu, seperti membuat lower third, efek
+                    transisi, dan animasi teks.
+                  </p>
+
+                  <ul class="card-meta-list">
+                    <li class="card-meta-item">
+                      <ion-icon
+                        name="library-outline"
+                        aria-hidden="true"
+                      ></ion-icon>
+                      <span class="span">21 Lessons</span>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon
+                        name="people-outline"
+                        aria-hidden="true"
+                      ></ion-icon>
+                      <span class="span">28 Students</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="course-card">
+                <figure
+                  class="card-banner img-holder"
+                  style="--width: 370; --height: 220"
+                >
+                  <img
+                    src="https://i.ytimg.com/vi/SBUaMwnhdwM/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLDerBeQvI7MRPG4eAXS1TBOEzGGpA"
+                    width="370"
+                    height="220"
+                    loading="lazy"
+                    alt=""
+                    class="img-cover"
+                  />
+                </figure>
+
+                <div class="abs-badge">
+                  <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                  <span class="span">2 Weeks</span>
+                </div>
+
+                <div class="card-content">
+                  <span class="badge">Videografi</span>
+
+                  <h3 class="h3">
+                    <a
+                      href="https://youtube.com/playlist?list=PLFuWn47YVfatYu0mrs1O7jskLWuEvj4LI&si=Z95BBtMhWnjq4cJp"
+                      class="card-title"
+                      >Basic Davinci Resolve</a
+                    >
+                  </h3>
+
+                  <p class="description">
+                    Pelajari workflow editing video sekaligus color grading
+                    profesional menggunakan DaVinci Resolve, dengan antarmuka
+                    yang powerful namun ramah pemula.
+                  </p>
+
+                  <ul class="card-meta-list">
+                    <li class="card-meta-item">
+                      <ion-icon
+                        name="library-outline"
+                        aria-hidden="true"
+                      ></ion-icon>
+                      <span class="span">12 Lessons</span>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon
+                        name="people-outline"
+                        aria-hidden="true"
+                      ></ion-icon>
+                      <span class="span">26 Students</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="course-card">
+                <figure
+                  class="card-banner img-holder"
+                  style="--width: 370; --height: 220"
+                >
+                  <img
+                    src="https://i.ytimg.com/vi/IhXh3COjnJI/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLD2egtESL_vfxVqdHE9mB-xNf2Omw"
+                    width="370"
+                    height="220"
+                    loading="lazy"
+                    alt=""
+                    class="img-cover"
+                  />
+                </figure>
+
+                <div class="abs-badge">
+                  <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                  <span class="span">3 Weeks</span>
+                </div>
+
+                <div class="card-content">
+                  <span class="badge">Fotografi</span>
+
+                  <h3 class="h3">
+                    <a
+                      href="https://youtube.com/playlist?list=PLFuWn47YVfauCo09MHhuqghzI1Lhtt1yt&si=l3rQ8yh_5NHtOurm"
+                      class="card-title"
+                      >Filosofi Fotografi</a
+                    >
+                  </h3>
+
+                  <p class="description">
+                    Mengenal fotografi sebagai seni bercerita, memahami makna di
+                    balik setiap frame, cara menangkap momen, serta memotret
+                    dengan pesan.
+                  </p>
+
+                  <ul class="card-meta-list">
+                    <li class="card-meta-item">
+                      <ion-icon
+                        name="library-outline"
+                        aria-hidden="true"
+                      ></ion-icon>
+                      <span class="span">16 Lessons</span>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon
+                        name="people-outline"
+                        aria-hidden="true"
+                      ></ion-icon>
+                      <span class="span">20 Students</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="course-card">
+                <figure
+                  class="card-banner img-holder"
+                  style="--width: 370; --height: 220"
+                >
+                  <img
+                    src="https://i.ytimg.com/vi/ZmFclqMmn2E/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLD92aRx523TCd6xpz7kNRfgeUlE8g"
+                    width="370"
+                    height="220"
+                    loading="lazy"
+                    alt=""
+                    class="img-cover"
+                  />
+                </figure>
+
+                <div class="abs-badge">
+                  <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                  <span class="span">3 Weeks</span>
+                </div>
+
+                <div class="card-content">
+                  <span class="badge">Videografi</span>
+
+                  <h3 class="h3">
+                    <a
+                      href="https://youtube.com/playlist?list=PLFuWn47YVfauwkVJypUGVfau8jWeCwxny&si=kpt0xdi4odVIngx1"
+                      class="card-title"
+                      >Dasar Filmmaking</a
+                    >
+                  </h3>
+
+                  <p class="description">
+                    Belajar storytelling visual, manajemen produksi, penyusunan 
+                    skrip, storyboard, hingga dasar untuk membuat film pendek 
+                    dan konten kreatif sinematik.
+                  </p>
+
+                  <ul class="card-meta-list">
+                    <li class="card-meta-item">
+                      <ion-icon
+                        name="library-outline"
+                        aria-hidden="true"
+                      ></ion-icon>
+                      <span class="span">24 Lessons</span>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon
+                        name="people-outline"
+                        aria-hidden="true"
+                      ></ion-icon>
+                      <span class="span">20 Students</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <br>
+        <br>
+        <!-- =========================
+     GAME CTA SECTION
+     ========================= -->
+        <div class="game-container">
+          <!-- Subjudul section game -->
+          <p class="course-subtitle">Direct The Scene</p>
+           <!-- Judul utama section game -->
+          <h2 class="game-title">Ayo latih skill Anda melalui permainan</h2>
+          <!-- Tombol untuk menuju halaman game -->
+          <a href="game.html"
+            ><button class="game-button">Start Game</button></a
+          >
+        </div>
+      </section>
+
+      <br />
+      <br />
+      <br />
+    </main>
+
+    <!-- =========================
+     FOOTER
+     ========================= -->
+    <footer id="footer">
+      <div class="footer-logo">
+        <img src="Image/SkenarioKita-footer.png" alt="" />
+      </div>
+
+      <div class="right-container">
+        <div class="right-column-container">
+          <h1>SkenarioKita</h1>
+
+          <div class="information">
+            <div class="footer-item">
+              <div class="footer-col footer-company">
+                <h3>Informasi</h3>
+                <hr class="line" />
+                <ul>
+                  <li><a href="aboutus.html">Tentang Kami</a></li>
+                </ul>
+              </div>
+
+              <div class="footer-col footer-social">
+                <h3>Kontak Kami</h3>
+                <hr class="line" />
+                <a
+                  href="https://www.instagram.com/osis_smaxto1?igsh=MXVtM2RkMjhqZjZ0bw=="
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+                <a
+                  href="https://www.tiktok.com/@osis_smaxto1?_t=8rczK0MXxHc&_r=1"
+                  ><i class="fa-brands fa-tiktok"></i
+                ></a>
+                <a
+                  href="https://www.youtube.com/@osissmast.kristoforus164/videos"
+                  ><i class="fa-brands fa-youtube"></i
+                ></a>
+                <a href="https://kristo.sch.id/v2/"
+                  ><i class="fa-solid fa-globe"></i
+                ></a>
+              </div>
+
+              <div class="footer-col footer-news">
+                <h3>Berita Terbaru</h3>
+                <hr class="line" />
+                <div class="email-input">
+                  <form action="">
+                    <input
+                      type="email"
+                      id="input"
+                      name="email"
+                      placeholder="Masukkan Email"
+                    />
+                    <button type="submit">Kirim</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- =========================
+     SCRIPT
+     ========================= -->
+    <script src="template.js"></script>
+  </body>
+</html>

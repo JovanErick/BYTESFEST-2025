@@ -1,0 +1,98 @@
+main {
+  padding-top: 80px;
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh;
+}
+
+.line-1 {
+  display: flex;
+  padding: 0 0 50px min(10vw, 15vw);
+}
+
+.line-1 .column-1 {
+  padding: 50px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+}
+
+.line-1 .column-1 p,
+.line-2 p {
+  line-height: 1.5;
+  font-size: clamp(1rem, 1.15vw, 1.15rem);
+}
+.line-1 .column-2 img {
+  width: 55vw;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.line-2 {
+  display: flex;
+  margin: 10px min(10vw, 15vw);
+  background-color: #f5f7f8;
+}
+
+.line-2 img {
+  width: 30vw;
+  object-fit: cover;
+}
+
+.text {
+  margin: 50px;
+}
+
+.whatToDo h1 {
+  margin: 10px min(175px, 15vw);
+}
+
+.swap {
+  flex-direction: row-reverse;
+}
+
+.line-2.swap img {
+  width: 25vw;
+  object-fit: cover;
+}
+
+.line-2.swap {
+  padding: 20px;
+}
+
+.line-2.swap .text {
+  margin: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+  .line-1 {
+    flex-direction: column-reverse;
+    padding: 0 min(20px, 10vw);
+  }
+
+  .line-1 .column-2 {
+    margin: auto;
+  }
+  .line-1 .column-2 img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+  }
+
+  .line-2 {
+    flex-direction: column;
+  }
+
+  .line-2 img {
+    width: 100%;
+  }
+
+  .line-2.swap img {
+    width: 100%;
+  }
+
+  .text {
+    margin: 30px;
+  }
+}

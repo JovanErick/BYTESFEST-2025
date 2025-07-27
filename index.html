@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- 
+      =========================
+      META & LINK SECTION
+      Halaman utama SkenarioKita
+      Memuat struktur dasar HTML, CSS, dan Font Awesome
+      =========================
+    -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="template.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>SkenarioKita</title>
+  </head>
+  <body>
+     <!-- ===================================
+         HEADER & NAVIGATION
+         ===================================
+         Bagian ini berisi logo, menu navigasi,
+         tombol hamburger (untuk mobile), 
+         dan tombol Sign Up/Login.
+    -->
+    <header>
+      <nav>
+        <!-- Logo SkenarioKita -->
+        <div class="logo-container">
+          <img src="/Image/SkenarioKita.png" alt="Skenario Kita" />
+          <a href="index.html"
+            ><h1>
+              <span style="color: var(--primary-color)">Skenario</span
+              ><span style="color: var(--secondary-color)">Kita</span>
+            </h1></a
+          >
+        </div>
+
+        <!-- Menu Navigasi Utama -->
+        <div class="menu" id="menu">
+          <a href="index.html"><p style="color: var(--secondary-color)">Home</p></a>
+          <a href="learning.html"><p>Learning Hub</p></a>
+          <a href="gallery.html"><p>Gallery</p></a>
+          <a href="forum.html"><p>Forum</p></a>
+          <a href="aboutus.html"><p>About Us</p></a>
+        </div>
+
+         <!-- Hamburger Menu untuk Mobile -->
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <!-- Tombol Sign Up dan Login -->
+        <div class="menu2" id="menu2">
+          <a href="signup.html" class="btn-signup">Sign Up</a>
+          <a href="login.html" class="btn-login">Login</a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- ===================================
+           HERO SECTION
+           ===================================
+           Bagian pertama yang muncul:
+           latar grid SVG, headline utama,
+           CTA Button & gambar grid.
+      -->
+      <section id="home">
+        <div class="background">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 90 90"
+            preserveAspectRatio="none"
+          >
+            <path d="M0,0 L100,0 L100,100 L0,100 Z" fill="url(#grid)" />
+            <defs>
+              <pattern
+                id="grid"
+                width="8.5"
+                height="8.5"
+                patternUnits="userSpaceOnUse"
+              >
+                <path
+                  d="M 10 0 L 0 0 0 10"
+                  fill="none"
+                  stroke="rgba(0, 0, 0, 0.05)"
+                  stroke-width="0.3"
+                />
+              </pattern>
+            </defs>
+          </svg>
+        </div>
+
+        <!-- Konten Utama -->
+        <div class="hero-content">
+          
+          <!-- Teks Headline & Deskripsi -->
+          <div class="content-left">
+            <h1>
+              <span style="color: var(--primary-color)">Capture Moments,</span>
+              <br />
+              <span style="color: var(--secondary-color)">Create Impact.</span>
+            </h1>
+            <p>
+              Platform edukasi interaktif untuk fotografi dan videografi.
+              Belajar, berkreasi, dan tampilkan karyamu dalam satu tempat.
+            </p>
+            
+             <!-- Tombol CTA -->
+            <div class="btn-container">
+              <a href="learning.html" class="btn learn-hub"
+                ><i class="fa-solid fa-graduation-cap"></i> Mulai Belajar</a
+              >
+              <a href="gallery.html" class="btn gallery"
+                ><i class="fa-solid fa-image"></i> Lihat karyamu</a
+              >
+              <a href="forum.html" class="btn forum"
+                ><i class="fa-solid fa-comments"></i> Gabung Forum</a
+              >
+            </div>
+          </div>
+
+           <!-- Foto -->
+          <div class="content-right">
+            <div class="grid-container">
+              <img src="/Image/Jewelline.JPG" alt="icon 1" class="tilt1" />
+              <img src="/Image/Erick.jpg" alt="icon 2" class="tilt2" />
+              <img src="/Image/Kayla.JPG" alt="icon 3" class="tilt3" />
+              <img src="/Image/VJM.JPG" alt="icon 4" class="tilt4" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+       <!-- ===================================
+           FITUR UNGGULAN
+           ===================================
+           Berisi 4 card fitur utama.
+      -->
+      <section id="top-features">
+        <div class="header-container">
+          <h2>Fitur Unggulan</h2>
+          <p>
+            Platform lengkap untuk mengembangkan skill fotografi dan videografi
+            dari dasar hingga mahir
+          </p>
+        </div>
+        <br />
+        <br />
+        <div class="card-container">
+          <div class="card">
+            <div class="icon-container">
+              <i class="fa-solid fa-book-open"></i>
+            </div>
+            
+            <!-- Learning Hub Card -->
+            <h4>Learning Hub</h4>
+            <p>
+              Akses video pembelajaran dari dasar hingga lanjutan, quiz
+              interaktif, dan dapatkan badge keahlian.
+            </p>
+            <br />
+            <a href="learning.html">Jelajahi Materi &#8594; </a>
+          </div>
+          <div class="card">
+            <div class="icon-container">
+              <i class="fa-solid fa-image"></i>
+            </div>
+
+            <!-- Gallery Card -->
+            <h4>Showcase Gallery</h4>
+            <p>
+              Upload dan pamerkan karya terbaikmu, dapatkan feedback, dan
+              terinspirasi dari karya komunitas.
+            </p>
+            <br />
+            <a href="gallery.html">Lihat Gallery &#8594;</a>
+          </div>
+          <div class="card">
+            <div class="icon-container">
+              <i class="fa-solid fa-calendar-days"></i>
+            </div>
+
+            <!-- Challanges Card -->
+            <h4>Challenges</h4>
+            <p>
+              Lakukan tantangan untuk mengasah skill, berkompetisi dengan
+              komunitas, dan memenangkan penghargaan.
+            </p>
+            <br />
+            <a href="game.html">Ikuti Challenges &#8594;</a>
+          </div>
+          <div class="card">
+            <div class="icon-container">
+              <i class="fa-solid fa-comments"></i>
+            </div>
+
+            <!-- Form Card -->
+            <h4>Community Forum</h4>
+            <p>
+              Diskusi dengan sesama kreator, tanya jawab dengan ahli, dan
+              temukan kolaborasi project menarik.
+            </p>
+            <br />
+            <a href="forum.html">Gabung Forum &#8594;</a>
+          </div>
+        </div>
+      </section>
+
+        <!-- ===================================
+           LEARNING HUB SECTION
+           ===================================
+           Daftar materi kursus yang bisa diakses.
+      -->
+      <section id="learning-hub">
+        <div class="title">
+          <h5>LEARNING HUB</h5>
+          <h2>Kembangkan Skillmu</h2>
+          <p>Akses materi pembelajaran interaktif dari dasar hingga lanjutan</p>
+        </div>
+
+        <br />
+        <br />
+        <div class="container">
+          <a
+            href="https://youtube.com/playlist?list=PLFuWn47YVfasn-IUQsEQpnct7wqq5QxEj&si=a3bBXlOqDxHpI9mx"
+            class="course-card"
+          >
+            <div class="img-holder">
+              <img
+                src="https://i.ytimg.com/vi/QQhJ3vHdQ3g/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLB044ayAHXr9ICoBsZvnzO7Z4a-dA"
+                loading="lazy"
+                alt=""
+              />
+            </div>
+            <div class="card-content">
+              <span class="badge">Fotografi & Videografi</span>
+
+              <h4>Basic Camera</h4>
+
+              <p>
+                Pelajari bagian-bagian kamera, cara kerja segitiga exposure, dan
+                mode-mode kamera lainnya untuk membantumu memotret dengan lebih
+                percaya diri.
+              </p>
+
+              <div class="card-meta-list">
+                <p>10 Lessons</p>
+                <p>27 Students</p>
+              </div>
+            </div>
+          </a>
+
+          <a
+            href="https://youtube.com/playlist?list=PLFuWn47YVfavZYTfBZVb_1WJRegqiZArq&si=iErycbuCBzbW-vaW"
+    
+            class="course-card"
+          >
+            <div class="img-holder">
+              <img
+                    src="https://i.ytimg.com/vi/iNLPyWuxDxo/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLD4tT8pqdGsToteoFWHNJ9pi-UiVA"
+                    width="370"
+                    height="220"
+                    loading="lazy"
+                    alt=""
+                    class="img-cover"
+                  />
+            </div>
+            <div class="card-content">
+              <span class="badge">Fotografi & Videografi</span>
+
+              <h4>Basic Camera Gear</h4>
+
+              <p>
+               Kenali lensa, tripod, stabilizer, filter, dan aksesoris
+                    penting lain, serta tips memilih gear sesuai kebutuhanmu
+                    untuk fotografi dan videografi.
+              </p>
+
+              <div class="card-meta-list">
+                <p>8 Lessons</p>
+                <p>25 Students</p>
+              </div>
+            </div>
+          </a>
+
+                    <a
+            href="learning.html"
+            class="course-card"
+          >
+            <div class="img-holder">
+              <img
+                src="https://i.ytimg.com/vi/-wuGs3zqeUY/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLC5zL1VeVJJF2vau-XFNb3Cq8cBjQ"
+                width="370"
+                height="220"
+                loading="lazy"
+                alt=""
+              />
+            </div>
+            <div class="card-content">
+              <span class="badge">Fotografi & Videografi</span>
+
+              <h4>Basic Camera Movement & Shot</h4>
+
+              <p>
+                Pelajari gerakan kamera seperti pan, tilt, dolly, dan jenis
+                shot (wide, close up, over the shoulder) untuk membuat video
+                yang dinamis dan bercerita.
+              </p>
+
+              <div class="card-meta-list">
+                <p>10 Lessons</p>
+                <p>27 Students</p>
+              </div>
+            </div>
+
+                        <div class="overlay-glassy">
+              <span>Lihat Selengkapnya</span>
+            </div>
+          </a>
+        </div>
+      </section>
+
+         <!-- ===================================
+           GALLERY SECTION
+           ===================================
+           Menampilkan karya komunitas & tombol Like.
+      -->
+      <section id="gallery">
+        <div class="title">
+          <h5>SHOWCASE GALLERY</h5>
+          <h2>Karya Terbaik Komunitas</h2>
+          <p>Temukan inspirasi dari karya-karya terbaik anggota komunitas</p>
+        </div>
+        <br /><br />
+        <div class="container">
+          <a href="gallery.html" class="gallery-card">
+            <div class="img-holder">
+              <img src="/Image/Gallery/2.webp" alt="" />
+            </div>
+
+            <div class="gallery-info">
+              <p>
+                Author: Jovan
+              </p>
+               <button class="like-button" data-liked="false">
+                  <i class="far fa-heart"></i> 39 Likes
+                </button>
+            </div>
+          </a>
+
+          <a href="gallery.html" class="gallery-card">
+            <div class="img-holder">
+              <img src="/Image/Gallery/3.webp" alt="" />
+            </div>
+
+            <div class="gallery-info">
+              <p>
+                Author: Jovan
+              </p>
+               <button class="like-button" data-liked="false">
+                  <i class="far fa-heart"></i> 123 Likes
+                </button>
+            </div>
+          </a>
+
+          <a href="gallery.html" class="gallery-card">
+            <div class="img-holder">
+              <img src="/Image/Gallery/4.webp" alt="" />
+            </div>
+
+            <div class="gallery-info">
+              <p>
+                Author: Jovan
+              </p>
+               <button class="like-button" data-liked="false">
+                  <i class="far fa-heart"></i> 426 Likes
+                </button>
+            </div>
+            <div class="overlay-glassy">
+              <span>Lihat Selengkapnya</span>
+            </div>
+          </a>
+        </div>
+      </section>
+    </main>
+    
+     <!-- ===================================
+         FOOTER
+         ===================================
+         Logo, link info, media sosial,
+         form email newsletter.
+    -->
+    <footer id="footer">
+      <div class="footer-logo">
+        <img src="Image/SkenarioKita-footer.png" alt="" />
+      </div>
+
+      <div class="right-container">
+        <div class="right-column-container">
+          <h1>SkenarioKita</h1>
+
+          <div class="information">
+            <div class="footer-item">
+              <div class="footer-col footer-company">
+                <h3>Informasi</h3>
+                <hr class="line" />
+                <ul>
+                  <li><a href="aboutus.html">Tentang Kami</a></li>
+                </ul>
+              </div>
+
+              <div class="footer-col footer-social">
+                <h3>Kontak Kami</h3>
+                <hr class="line" />
+                <a
+                  href="https://www.instagram.com/osis_smaxto1?igsh=MXVtM2RkMjhqZjZ0bw=="
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+                <a
+                  href="https://www.tiktok.com/@osis_smaxto1?_t=8rczK0MXxHc&_r=1"
+                  ><i class="fa-brands fa-tiktok"></i
+                ></a>
+                <a
+                  href="https://www.youtube.com/@osissmast.kristoforus164/videos"
+                  ><i class="fa-brands fa-youtube"></i
+                ></a>
+                <a href="https://kristo.sch.id/v2/"
+                  ><i class="fa-solid fa-globe"></i
+                ></a>
+              </div>
+
+              <div class="footer-col footer-news">
+                <h3>Berita Terbaru</h3>
+                <hr class="line" />
+                <div class="email-input">
+                  <form action="">
+                    <input
+                      type="email"
+                      id="input"
+                      name="email"
+                      placeholder="Masukkan Email"
+                    />
+                    <button type="submit">Kirim</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+     <!-- ===================================
+         SCRIPT
+         ===================================
+         JS eksternal untuk interaksi navbar, dll.
+    -->
+    <script src="template.js"></script>
+  </body>
+</html>
