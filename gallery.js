@@ -15,7 +15,7 @@ for (let i = 2; i <= totalImages; i++) {
   galleryCard.className = "gallery-card";
 
   galleryCard.innerHTML = `
-    <img src="/Image/Gallery/${i}.webp" alt="Judul Karya ${i}" />
+    <img src="./Image/Gallery/${i}.webp" alt="Judul Karya ${i}" />
     <div class="gallery-info">
       <p class="author">Author: ${randomAuthor}</p>
       <button class="like-button" data-liked="false">
